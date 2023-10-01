@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Wildness Wandaers Rental Camping </title>
+        <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+       referrerpolicy="no-referrer" />
+       <link rel="icon" href="../Images/MyLogo.png">
+    </head>
+    <body>
+        <!-------------iv -header and navigation--------------->
+        <div class="header">
+            <nav>
+                <a href="" class="logo"><img src="../Images/MyLogo.png" alt="Logo"></a>
+
+                <input class="menubutton" type="checkbox" id="menubtn">
+                <label for="menubtn" class="menuico"><span class="navico"></span></label>
+                    <ul class="menu" >
+                        <li><a href="index.html">Home</a></li>  
+                        <li><a href="Catagories.html">Categories</a></li> 
+                        <li><a href="Contact.html">Contact</a></li> 
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="Review.html">Review</a></li>
+                    </ul>
+                        <a class="menu" href="basket.html"><button class="navbutton">Basket</button></a>   
+            </nav>
+        </div>
+        <!----------------- main contents -------------->
+        <section class="cart">
+        
+            <div class="cart-left">
+
+                <div class="cart-detail">
+                    <ul>
+                        <li>Iamge</li>
+                        <li>ProductName</li>
+                        <li>Quantity</li>
+                        <li>Total Price</li>
+                        <li>Action</li>
+                    </ul>
+                </div>
+                
+
+                <div class="cart-detail">
+                    <ul>
+                        <li><img src="../Images/Ozark Trail Basic Quad Folding Camp Chair.webp" alt="Ozark Trail Basic Quad Folding Camp Chair"> </li>
+                        <li>Ozark Trail Basic Quad Folding Camp Chair</li>
+                        <li><input    class="quantity"  type="number" value="2"></li>
+                        <li>£19.2</li>
+                        <li><button class="actionbtn">X</button></li>
+                    </ul>
+                </div>
+                
+                <div class="cart-detail">
+                    <ul>
+                        <li class="productincart"><img src="../Images/kinetic-30l-pack.jpg" alt="kinetic 30l pack"></li>
+                        <li>kinetic 30l pack</li>
+                        <li><input  class="quantity" type="number" value="1"></li>
+                        <li>£130.00</li>
+                        <li><button class="actionbtn">X</button></li>
+                    </ul>
+                </div>
+
+                <div class="cart-detail">
+                    <ul>
+                        <li><img src="../Images/TOAKS Titanium 1100ml Pot.webp" alt="TOAKS Titanium 1100ml Pot"></li>
+                        <li>TOAKS Titanium 1100ml Pot</li>
+                        <li><input   class="quantity" type="number" value="2"></li>
+                        <li>£92.00</li>
+                        <li><button class="actionbtn">X</button></li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <div class="methodheading"><h2>We accept</h2></div>
+                    <div class="method-icon">
+                        <img src="../Images/paypal.png" alt="Paypal"> 
+                        <img src="../Images/visa.png" alt="visa"> 
+                        <img src="../Images/visa_mastercard.png" alt="Visa Mastercard"> 
+                     </div>   
+                </div>
+            </div> 
+             
+            <div class="cart-right">
+                <h1>Order Summary</h1>
+                <div class="order-summary">
+                    <div class="order-item">
+                        <span>TotalQuantity</span>
+                        <span>5</span>
+                    </div>
+                    <div class="order-item">
+                        <span>SubTotal</span>
+                        <span>£241.20</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Delivery Fees</span>
+                        <span>Free</span>
+                    </div>   
+                </div>
+                <div class="total">
+                    <span>Total:</span>
+                    <span>£241.20</span>
+                </div>
+                <div class="payment-form">
+                    <span>Enter your promo code</span>
+                    <input type="text" id="promocode" name="pc">
+                </div>
+                <div class="payment-form1">
+                    <span>Your Notes</span>
+                    <textarea rows="5" placeholder="Instructions?SpecialRequest? Add them here"></textarea>
+                </div>
+                <label for="modelpopup" class="btn-checkout">CheckOut</label>
+                <input type="checkbox" id="modelpopup" class="payment-checkbox">
+                <div class="modal">
+                    <div class="modal-content">
+                        
+                        <div class="payment-form">
+                            <h2>Payment Method</h2>
+                            <form>
+                                <div class="payment-form-group">
+                                    <label for="cardholder">Cardholder's Name</label>
+                                    <input type="text" id="cardholder" name="cardholder" required>
+                                </div>
+                                <div class="payment-form-group">
+                                    <label for="cardnumber">Card Number</label>
+                                    <input type="number" id="cardnumber" name="cardnumber" required>
+                                </div>
+                                <div class="card-group">
+                                    <div class="payment-form-group">
+                                        <label for="expiration">Expiration Date</label>
+                                        <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="payment-form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="number" id="cvv" name="cvv" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-button">Submit Payment</button>
+                                
+                            </form>
+                        </div>
+                        <form>
+                            <label for="modelpopup" class="btn-checkout">Go Back To Basket</label>
+                        </form>
+            </div>
+                </div>          
+            </div>
+            
+        </section>
+    
+        <footer>
+            <div id="ficons">
+                <a href="https://www.facebook.com"><img src="../Images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../Images/instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/"><img src="../Images/twitter.png" alt="X"></a>
+                <a href="https://www.youtube.com/"><img src="../Images/youtube.png" alt="You Tube"></a>
+                <a href="https://www.linkedin.com/"><img src="../Images/linkedin.png" alt="Linkedin"></a>
+             </div>
+            <div id="flist">
+                <ul class="menu" >
+                    <li><a href="home.html">Home</a></li>  
+                     <li><a href="Catagories.html">Categories</a></li> 
+                    <li><a href="Contact.html">Contact</a></li> 
+                    <li><a href="FAQ.html">FAQs</a></li>
+                    <li><a href="Review.html">Review</a></li>
+                </ul>   
+            </div>  
+            <div id="ftext">All Copyright Served &copy; www.WildernessWandererslRentalCamping.com</div>         
+        </footer>
+    </body>
+</html>
